@@ -1,0 +1,10 @@
+table_set_default ipv6_lpm drop
+table_add ipv6_lpm ipv6_forward A::1/128 => 08:00:00:00:00:00 1
+table_add ipv6_lpm ipv6_forward A::2/128 => 08:00:00:00:00:00 1
+table_add ipv6_lpm ipv6_forward A::3/128 => 08:00:00:00:00:00 1
+table_add ipv6_lpm ipv6_forward B::5/128 => 08:00:00:00:00:00 2
+table_add ipv6_lpm ipv6_forward B::6/128 => 08:00:00:00:00:00 2
+table_add ipv6_lpm ipv6_forward B::7/128 => 08:00:00:00:00:00 2
+table_add ipv6_lpm ipv6_forward B::8/128 => 08:00:00:00:00:00 2
+table_add ipv6_lpm ipv6_forward 1::1/128 => 08:00:00:00:00:00 1
+table_add ipv6_lpm ipv6_forward 2::2/128 => 08:00:00:00:00:00 2
